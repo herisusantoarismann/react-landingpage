@@ -21,7 +21,7 @@ export interface INavLink {
 }
 
 export interface IFeature {
-  id: string;
+  id?: string;
   icon: string;
   title: string;
   content: string;
@@ -38,7 +38,9 @@ export interface IFeedback {
 export interface IStat {
   id: string;
   title: string;
-  value: string;
+  value: number;
+  text: string;
+  textBefore?: string;
 }
 
 export interface ILink {
@@ -136,17 +138,21 @@ export const stats: IStat[] = [
   {
     id: "stats-1",
     title: "User Active",
-    value: "3800+",
+    value: 3800,
+    text: "+",
   },
   {
     id: "stats-2",
     title: "Trusted by Company",
-    value: "230+",
+    value: 230,
+    text: "+",
   },
   {
     id: "stats-3",
     title: "Transaction",
-    value: "$230M+",
+    value: 230,
+    text: "M+",
+    textBefore: "$",
   },
 ];
 
