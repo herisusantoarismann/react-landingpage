@@ -15,19 +15,19 @@ import {
   star,
 } from "../assets";
 
-interface INavLink {
+export interface INavLink {
   id: string;
   title: string;
 }
 
-interface IFeature {
+export interface IFeature {
   id: string;
   icon: string;
   title: string;
   content: string;
 }
 
-interface IFeedback {
+export interface IFeedback {
   id: string;
   content: string;
   name: string;
@@ -35,29 +35,29 @@ interface IFeedback {
   img: string;
 }
 
-interface IStat {
+export interface IStat {
   id: string;
   title: string;
   value: string;
 }
 
-interface ILink {
+export interface ILink {
   name: string;
   link: string;
 }
 
-interface IFooterLink {
+export interface IFooterLink {
   title: string;
   links: ILink[];
 }
 
-interface ISocialMedia {
+export interface ISocialMedia {
   id: string;
   icon: string;
   link: string;
 }
 
-interface IClient {
+export interface IClient {
   id: string;
   logo: string;
 }
