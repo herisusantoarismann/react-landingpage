@@ -14,6 +14,9 @@ import {
 import styles from "./style";
 
 function App() {
+  React.useEffect(() => {
+    document.title = "HooBank";
+  }, []);
   return (
     <div className="bg-primary w-full overflow-hidden">
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
